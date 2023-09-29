@@ -7,16 +7,17 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>
-        Reto Hackaton de ciencia de datos
+        Biomedical App
     </title>
  
     <style>
- 
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
         /* Styling the Body element i.e. Color,
         Font, Alignment */
         body {
-            background-color: #05c46b;
-            font-family: Verdana;
+            margin: 0;
+            background-color: #f29175;
+            font-family: 'Work Sans', sans-serif;
             text-align: center;
         }
  
@@ -74,62 +75,143 @@
             margin-top: 50px;
             margin-bottom: 20px;
         }
+
+        .container {
+	          width: 80%;
+	          margin: 0 auto;
+          
+        }
+
+        header {
+          background: #000000;
+          
+        }
+
+        header::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+
+        .logo {
+          float: left;
+          padding: 10px 0;
+        }
+
+        nav {
+          float: right;
+          text-align: center;
+        }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
     </style>
 </head>
   
-<body>
-    <h1>Reto Hackaton de ciencia de datos</h1>
+<header>
+    <div class="container">
+      <img src="https://clipart.info/images/ccovers/1484755800real-heart-png.png" alt="Heart" width="110" height="80" class="logo"></img>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   
+<body>
     <!-- Create Form -->
     <form id="form">
  
         <!-- Details -->
         <div class="form-control">
             <label for="name" id="label-name">
-                Name
+                Nombre completo
             </label>
  
             <!-- Input Type Text -->
             <input type="text"
                    id="name"
-                   placeholder="Enter your name" />
+                   placeholder="Ingresa tu nombre completo" />
         </div>
   
         <div class="form-control">
             <label for="email" id="label-email">
-                Email
+                Correo
             </label>
  
             <!-- Input Type Email-->
             <input type="email"
                    id="email"
-                   placeholder="Enter your email" />
+                   placeholder="Igresa tu correo electronico" />
         </div>
   
         <div class="form-control">
             <label for="age" id="label-age">
-                Age
+                Edad
             </label>
  
             <!-- Input Type Text -->
             <input type="text"
                    id="age"
-                   placeholder="Enter your age" />
+                   placeholder="Ingresa tu edad" />
         </div>
   
         <div class="form-control">
             <label for="role" id="label-role">
-                Which option best describes you?
+                ¿Qué opción te describe mejor?
             </label>
              
             <!-- Dropdown options -->
             <select name="role" id="role">
-                <option value="student">Student</option>
-                <option value="intern">Intern</option>
+                <option value="student">Estudiante</option>
+                <option value="intern">Empleado</option>
                 <option value="professional">
-                    Professional
+                    Desempleado
                 </option>
-                <option value="other">Other</option>
+                <option value="other">Otros</option>
             </select>
         </div>
   
