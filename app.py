@@ -32,9 +32,9 @@ def procesar_encuesta():
     resultado_prediccion = modelo_rf.predict([[
         datos_encuesta['General_Health'],
         datos_encuesta['Checkup'],
-        datos_encuesta['Heart_Disease']
-        datos_encuesta['Depression']
-        datos_encuesta['Arthritis']
+        datos_encuesta['Heart_Disease'],
+        datos_encuesta['Depression'],
+        datos_encuesta['Arthritis'],
         datos_encuesta['Sex']
       
     ]])
