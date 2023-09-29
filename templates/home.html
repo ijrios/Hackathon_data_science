@@ -17,9 +17,9 @@
         body {
             margin: 0;
             background-color: #f29175;
-            background-image: url('https://img1.picmix.com/output/stamp/normal/3/9/7/1/1741793_2ac35.gif'); 
+            background-image: url('templates/ecg.gif'); 
              background-size: 55% auto;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-attachment: fixed;
           
             font-family: 'Work Sans', sans-serif;
@@ -155,7 +155,7 @@
   
 <header>
     <div class="container">
-      <img src="https://clipart.info/images/ccovers/1484755800real-heart-png.png" alt="Heart" width="110" height="80" class="logo"></img>
+      <img src="https://clipart.info/images/ccovers/1484755800real-heart-png.png" alt="Heart" width="110" height="90" class="logo"></img>
       <nav>
         <ul>
           </br>
@@ -170,18 +170,65 @@
     <form id="form">
  
         <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Nombre completo
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Ingresa tu nombre completo" />
-        </div>
+<div class="form-control" style="display: inline-block; margin-right: 80px;">
+    <label for="name" id="label-name">
+        Nombre completo
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="name"
+           placeholder="Ingresa tu nombre completo"
+          style="width: 180px;"/>
+</div>
+
+<!-- Añadir otro campo de entrada para el apellido con un espacio -->
+<div class="form-control" style="display: inline-block;">
+    <label for="apellido" id="label-apellido">
+        Apellido
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="apellido"
+           placeholder="Ingresa tu apellido"
+          style="width: 180px;"/>
+</div>
+
   
-        <div class="form-control">
+ <div class="form-control" style="display: inline-block; margin-right: 80px;">
+    <label for="type" id="label-type">
+        Tipo
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="type"
+           placeholder="Inresa tipo de documento"
+          style="width: 180px;"/>
+</div>
+
+<!-- Añadir otro campo de entrada para el apellido con un espacio -->
+<div class="form-control" style="display: inline-block;">
+    <label for="doc" id="label-doc">
+        Documento
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="doc"
+           placeholder="Ingresa documento"
+          style="width: 180px;"/>
+</div>
+
+<div class="form-control">
+    <label for="age" id="label-age">
+        Fecha de nacimiento
+    </label>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+</div>
+
+       <div class="form-control">
             <label for="email" id="label-email">
                 Correo
             </label>
@@ -190,109 +237,198 @@
             <input type="email"
                    id="email"
                    placeholder="Igresa tu correo electronico" />
-        </div>
-  
-        <div class="form-control">
-            <label for="age" id="label-age">
-                Edad
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="age"
-                   placeholder="Ingresa tu edad" />
-        </div>
-  
-        <div class="form-control">
-            <label for="role" id="label-role">
-                ¿Qué opción te describe mejor?
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="role" id="role">
-                <option value="student">Estudiante</option>
-                <option value="intern">Empleado</option>
-                <option value="professional">
-                    Desempleado
-                </option>
-                <option value="other">Otros</option>
-            </select>
-        </div>
-  
-        <div class="form-control">
+     </div>
+
+       <div class="form-control">
             <label>
-                Cuantas veces al día te ejercitas?
+                Sexo
             </label>
  
             <!-- Input Type Radio Button -->
             <label for="recommed-1">
                 <input type="radio"
                        id="recommed-1"
-                       name="recommed">Yes</input>
+                       name="recommed">Hombre</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Mujer</input>
+            </label>
+         </div>
+
+        <div class="form-control">
+            <label>
+                Con que frecuencia va al médico?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Nunca</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En el último año</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En los últimos 2 años</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En los últimos 5 años</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Hace 5 o más años</input>
+            </label>
+        </div>
+
+      <div class="form-control">
+            <label>
+                Tienes artritis?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
             </label>
             <label for="recommed-2">
                 <input type="radio"
                        id="recommed-2"
                        name="recommed">No</input>
             </label>
-            <label for="recommed-3">
+        </div>
+    
+         <div class="form-control">
+            <label>
+                ¿Ha sido diagnosticado con alguna enfermedad cardíaca?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
                 <input type="radio"
-                       id="recommed-3"
-                       name="recommed">Maybe</input>
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
             </label>
         </div>
+
+        <div class="form-control">
+            <label>
+                ¿Con qué frecuencia consume alcohol?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>
+                ¿Ha experimentado síntomas como dolor en el pecho, falta de aliento o palpitaciones recientemente?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+
+      <div class="form-control">
+            <label>
+                ¿Ha experimentado palpitaciones recientemente?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+
+      <div class="form-control">
+            <label>
+                Tienes depresión?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+        
   
         <div class="form-control">
-            <label>Languages and Frameworks known
-                <small>(Check all that apply)</small>
+            <label>¿Cómo es su dieta habitual?
+                <small>(Marque todo lo que corresponda)</small>
             </label>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">C</input></label>
+                       name="inp">Vegetales y Hortalizas</input></label>
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">C++</input></label>
+                       name="inp">Comidas Rapidas</input></label>
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp">C#</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Java</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Python</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">JavaScript</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">React</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Angular</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Django</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Spring</input></label>
+                       name="inp">Proteinas</input></label>
         </div>
   
         <div class="form-control">
             <label for="comment">
-                Any comments or suggestions
+                Cualquier comentario o sugerencia
             </label>
  
             <!-- multi-line text input control -->
             <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
+                placeholder="Introduce tu comentario aquí">
             </textarea>
         </div>
   
         <!-- Multi-line Text Input Control -->
         <button type="submit" value="submit">
-            Submit
+            Envíar
         </button>
     </form>
 </body>
