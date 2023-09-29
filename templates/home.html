@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>
-        Biomedical App
+        CardioVigilant AI
     </title>
  
     <style>
@@ -159,7 +159,7 @@
       <nav>
         <ul>
           </br>
-          <h1 style="color :white; ">CardioPredict: Tu Guía de Salud Cardíaca</h1>
+          <h1 style="color :white; ">CardioVigilant AI: Tu Vigilante de Salud Cardíaca</h1>
         </ul>
       </nav>
     </div>
@@ -167,7 +167,7 @@
   
 <body>
     <!-- Create Form -->
-    <form id="form">
+    <form method="POST" action="/procesar_encuesta">
  
         <!-- Details -->
 <div class="form-control" style="display: inline-block; margin-right: 80px;">
@@ -259,6 +259,39 @@
 
         <div class="form-control">
             <label>
+               ¿En general cómo es su estado de salud?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Nunca</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En el último año</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En los últimos 2 años</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">En los últimos 5 años</input>
+            </label>
+          <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Hace 5 o más años</input>
+            </label>
+        </div>
+
+       <div class="form-control">
+            <label>
                 Con que frecuencia va al médico?
             </label>
  
@@ -307,7 +340,42 @@
                        name="recommed">No</input>
             </label>
         </div>
-    
+
+         <div class="form-control">
+            <label>
+                Tienes artritis?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+      
+         <div class="form-control">
+            <label>
+                Tienes artritis?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Si</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
          <div class="form-control">
             <label>
                 ¿Ha sido diagnosticado con alguna enfermedad cardíaca?
