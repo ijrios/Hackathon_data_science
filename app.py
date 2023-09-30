@@ -27,7 +27,7 @@ mapeo_respuestas = {
 def hello_hackathon():
     return render_template('home.html')
 
-#Se crea evento para 
+#Se crea evento para procesar encuesta
 @app.route('/procesar_encuesta', methods=['POST'])
 def procesar_encuesta():
    #Obtenemos los datos del formulario
@@ -72,14 +72,12 @@ def procesar_encuesta():
     df = pd.read_csv('data/encuesta.csv',header=None)
     columns_to_drop = [7,8,9,10,11,12]
     filtered_df = df.drop(columns=columns_to_drop)
-    with open("code (models)/modelo_entrenado_final.pkl", "rb") as f:
+    with open("code (models)/modelo_entrenado.pkl", "rb") as f:
       model = pickle.load(f)
     prediction = model.predict(filtered_df).tolist()
     prediction.to_csv('data/predict.csv', mode='a', header=False, index=False)
     response = {'mensaje': 'La respuesta ha sido enviada al correo electrónico.'}
     return jsonify(response)
-
-
 
 if __name__  == "__main__":
   app.run(host="0.0.0.0", debug=True)
