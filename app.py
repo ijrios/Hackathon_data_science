@@ -72,11 +72,27 @@ def procesar_encuesta():
     df = pd.read_csv('data/encuesta.csv',header=None)
     columns_to_drop = [7,8,9,10,11,12]
     filtered_df = df.drop(columns=columns_to_drop)
-    with open("code (models)/modelo_entrenado.pkl", "rb") as f:
-      model = pickle.load(f)
-    prediction = model.predict(filtered_df).tolist()
-    prediction.to_csv('data/predict.csv', mode='a', header=False, index=False)
+    with open("code (models)/modelo_entrenado_final.pkl", "rb") as f:
+      try:
+        model = pickle.load(f)
+        prediction = model.predict(filtered_df).tolist()
+        prediction_df = pd.DataFrame(prediction)
+        prediction_df.to_csv('data/predict.csv', mode='a', header=False, index=False)
+      except pickle.UnpicklingError as e:
+        print(f"UnpicklingError: {e}")
+        # Opcionalmente, puedes imprimir el contenido del archivo para inspección:
+        f.seek(0)
+        file_contents = f.read()
+        print(f"File Contents: {file_contents}")
+
+    # Supongo que 'filtered_df' es tu DataFrame
+    # Realiza la predicción
+
+    # Convierte la predicción en un DataFrame de pandas y guárdalo en un archivo CSV
+    
     response = {'mensaje': 'La respuesta ha sido enviada al correo electrónico.'}
+
+   #Devuelve la respuesta en formato JSON utilizando Flask jsonify
     return jsonify(response)
 
 if __name__  == "__main__":
