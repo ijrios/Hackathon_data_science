@@ -16,7 +16,7 @@
         Font, Alignment */
         body {
             margin: 0;
-            background-color: #f29175;
+            background-color: #B5B2B2;
             background-image: url('templates/ecg.gif'); 
              background-size: 55% auto;
             background-repeat: repeat;
@@ -88,7 +88,7 @@
         }
 
         header {
-          background: #000000;
+          background: #ffffff;
           
         }
 
@@ -150,6 +150,10 @@
           width: 100%;
         }
 
+       h1 {
+            color: #4040fb;
+        }
+
     </style>
 </head>
   
@@ -159,7 +163,7 @@
       <nav>
         <ul>
           </br>
-          <h1 style="color :white; ">CardioVigilant AI: Tu Vigilante de Salud Cardíaca</h1>
+         <h1 style="color:#4040fb">CardioVigilant AI: Tu Vigilante de Salud Cardíaca</h1>
         </ul>
       </nav>
     </div>
@@ -167,415 +171,418 @@
   
 <body>
     <!-- Create Form -->
-    <form method="POST" action="/procesar_encuesta">
+<form method="POST" action="/procesar_encuesta">
  
-        <!-- Details -->
-<div class="form-control" style="display: inline-block; margin-right: 80px;">
-    <label for="name" id="label-name">
-        Nombre completo
-    </label>
+    <!-- Details -->
+    <div class="form-control" style="display: inline-block; margin-right: 80px;">
+        <label for="name"  id="label-name">
+            Nombre
+        </label>
 
-    <!-- Input Type Text -->
-    <input type="text"
-           id="name"
-           placeholder="Ingresa tu nombre completo"
-          style="width: 180px;"/>
-</div>
+        <!-- Input Type Text -->
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Ingresa tu nombre"
+               style="width: 180px;"/>
+    </div>
 
-<!-- Añadir otro campo de entrada para el apellido con un espacio -->
-<div class="form-control" style="display: inline-block;">
-    <label for="apellido" id="label-apellido">
-        Apellido
-    </label>
+    <!-- Añadir otro campo de entrada para el apellido con un espacio -->
+    <div class="form-control" style="display: inline-block;">
+        <label for="apellido" id="label-apellido">
+            Apellido
+        </label>
 
-    <!-- Input Type Text -->
-    <input type="text"
-           id="apellido"
-           placeholder="Ingresa tu apellido"
-          style="width: 180px;"/>
-</div>
+        <!-- Input Type Text -->
+        <input type="text"
+               id="apellido"
+                name="apellido"
+               placeholder="Ingresa tu apellido"
+               style="width: 180px;"/>
+    </div>
 
   
- <div class="form-control" style="display: inline-block; margin-right: 80px;">
-    <label for="type" id="label-type">
-        Tipo
-    </label>
+    <div class="form-control" style="display: inline-block; margin-right: 80px;">
+        <label for="type" id="label-type">
+            Tipo de documento
+        </label>
 
-    <!-- Input Type Text -->
-    <input type="text"
-           id="type"
-           placeholder="Inresa tipo de documento"
-          style="width: 180px;"/>
-</div>
+        <!-- Input Type Text -->
+        <input type="text"
+               id="type"
+               name="type"
+               placeholder="Ingresa tipo de documento"
+               style="width: 180px;"/>
+    </div>
 
-<!-- Añadir otro campo de entrada para el apellido con un espacio -->
-<div class="form-control" style="display: inline-block;">
-    <label for="doc" id="label-doc">
-        Documento
-    </label>
+    <!-- Añadir otro campo de entrada para el documento con un espacio -->
+    <div class="form-control" style="display: inline-block;">
+        <label for="doc" id="label-doc">
+            Número de documento
+        </label>
 
-    <!-- Input Type Text -->
-    <input type="text"
-           id="doc"
-           placeholder="Ingresa documento"
-          style="width: 180px;"/>
-</div>
+        <!-- Input Type Text -->
+        <input type="text"
+               id="doc"
+               name= "doc"
+               placeholder="Ingresa número de documento"
+               style="width: 180px;"/>
+    </div>
 
-<div class="form-control">
-    <label for="age" id="label-age">
-        Fecha de nacimiento
-    </label>
-    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-</div>
+    <div class="form-control">
+        <label for="fechaNacimiento" id="label-fechaNacimiento">
+            Fecha de nacimiento
+        </label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+    </div>
 
-       <div class="form-control">
-            <label for="email" id="label-email">
-                Correo
-            </label>
- 
-            <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Igresa tu correo electronico" />
-     </div>
+    <div class="form-control">
+        <label for="email" id="label-email">
+            Correo electrónico
+        </label>
 
-       <div class="form-control">
-            <label>
-                Sexo
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Hombre</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Mujer</input>
-            </label>
-         </div>
+        <!-- Input Type Email-->
+        <input type="email"
+               id="email"
+              name="email"
+               placeholder="Ingresa tu correo electrónico" />
+    </div>
 
-        <div class="form-control">
-            <label>
-               ¿En general cómo es su estado de salud? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Pobre</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Regular</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Bueno</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Muy bueno</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Excelente</input>
-            </label>
-        </div>
+  <div class="form-control">
+        <label for="telefono" id="label-telefono">
+            Celular de contacto
+        </label>
 
-       <div class="form-control">
-            <label>
-                ¿Cuánto tiempo ha pasado desde la última vez que visitó a su médico?
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Nunca</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">En el último año</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">En los últimos 2 años</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">En los últimos 5 años</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Hace 5 o más años</input>
-            </label>
-        </div>
+        <input type="number" id="telefono" name="telefono" min="0" step="1" />
+    </div>
 
-      <div class="form-control">
-            <label>
-                ¿Realiza ejercicio fisico regularmente? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+    <div class="form-control">
+        <label>
+            Sexo
+        </label>
 
-         <div class="form-control">
-            <label>
-                ¿Fuma?
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+        <!-- Input Type Radio Button -->
+        <label for="sexo-hombre">
+            <input type="radio"
+                   id="sexo-hombre"
+                   name="sexo">Hombre</input>
+        </label>
+        <label for="sexo-mujer">
+            <input type="radio"
+                   id="sexo-mujer"
+                   name="sexo">Mujer</input>
+        </label>
+    </div>
 
-      <div class="form-control">
-    <label for="alcohol-consumption">
-        ¿Cuántas veces consumes alcohol al mes?
-    </label>
-    <input type="number" id="alcohol-consumption" name="alcohol-consumption" min="0" max="30" step="1" />
-</div>
-      
-         <div class="form-control">
-            <label>
-                ¿Ha sido diagnosticado con una enfermedad cardiovascular? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
-         <div class="form-control">
-            <label>
-               ¿Tiene diabetes? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+    <div class="form-control">
+        <label>
+            ¿En general cómo es su estado de salud? 
+        </label>
 
-        <div class="form-control">
-            <label>
-                ¿Tiene hipertención? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+        <!-- Input Type Radio Button -->
+        <label for="salud-pobre">
+            <input type="radio"
+                   id="salud-pobre"
+                   name="estadoSalud">Pobre</input>
+        </label>
+        <label for="salud-regular">
+            <input type="radio"
+                   id="salud-regular"
+                   name="estadoSalud">Regular</input>
+        </label>
+        <label for="salud-bueno">
+            <input type="radio"
+                   id="salud-bueno"
+                   name="estadoSalud">Bueno</input>
+        </label>
+        <label for="salud-muybueno">
+            <input type="radio"
+                   id="salud-muybueno"
+                   name="estadoSalud">Muy bueno</input>
+        </label>
+        <label for="salud-excelente">
+            <input type="radio"
+                   id="salud-excelente"
+                   name="estadoSalud">Excelente</input>
+        </label>
+    </div>
 
-      <div class="form-control">
-            <label>
-                ¿Tiene obesidad? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+    <div class="form-control">
+        <label>
+            ¿Cuánto tiempo ha pasado desde la última vez que visitó a su médico?
+        </label>
 
+        <!-- Input Type Radio Button -->
+        <label for="ultimaVisita-nunca">
+            <input type="radio"
+                   id="ultimaVisita-nunca"
+                   name="ultimaVisita">Nunca</input>
+        </label>
+        <label for="ultimaVisita-ultimoanio">
+            <input type="radio"
+                   id="ultimaVisita-ultimoanio"
+                   name="ultimaVisita">En el último año</input>
+        </label>
+        <label for="ultimaVisita-dosanios">
+            <input type="radio"
+                   id="ultimaVisita-dosanios"
+                   name="ultimaVisita">En los últimos 2 años</input>
+        </label>
+        <label for="ultimaVisita-cincoanios">
+            <input type="radio"
+                   id="ultimaVisita-cincoanios"
+                   name="ultimaVisita">En los últimos 5 años</input>
+        </label>
+        <label for="ultimaVisita-mascincoanios">
+            <input type="radio"
+                   id="ultimaVisita-mascincoanios"
+                   name="ultimaVisita">Hace 5 o más años</input>
+        </label>
+    </div>
 
-        <div class="form-control">
-            <label>
-                ¿Ha experimentado síntomas como dolor en el pecho, falta de aliento o palpitaciones recientemente?
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+    <div class="form-control">
+        <label>
+            ¿Realiza ejercicio físico regularmente? 
+        </label>
 
-      <div class="form-control">
-            <label>
-                ¿Tiene artritis? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+        <!-- Input Type Radio Button -->
+        <label for="ejercicio-si">
+            <input type="radio"
+                   id="ejercicio-si"
+                   name="realizaEjercicio">Sí</input>
+        </label>
+        <label for="ejercicio-no">
+            <input type="radio"
+                   id="ejercicio-no"
+                   name="realizaEjercicio">No</input>
+        </label>
+    </div>
 
-      <div class="form-control">
-            <label>
-                ¿En su familia se ha presentado enfermedades del sistema circulatorío? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Si</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-        </div>
+    <div class="form-control">
+        <label>
+            ¿Fuma?
+        </label>
 
-       <div class="form-control">
-            <label>
-                ¿Con qué frecuencia consume frutas? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Nunca</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Poco</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Mucho</input>
-            </label>
-        </div>
-      <div class="form-control">
-            <label>
-                ¿Con qué frecuencia consume vegetales? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Nunca</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Poco</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Mucho</input>
-            </label>
-        </div>
+        <!-- Input Type Radio Button -->
+        <label for="fuma-si">
+            <input type="radio"
+                   id="fuma-si"
+                   name="fuma">Sí</input>
+        </label>
+        <label for="fuma-no">
+            <input type="radio"
+                   id="fuma-no"
+                   name="fuma">No</input>
+        </label>
+    </div>
 
-      <div class="form-control">
-            <label>
-                ¿Con qué frecuencia consume fritos o comida rápida? 
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Nunca</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Poco</input>
-            </label>
-          <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">Mucho</input>
-            </label>
-        </div>
-      
-  
-        <div class="form-control">
-            <label for="comment">
-                Cualquier comentario o problema diferente de salud?
-            </label>
- 
-            <!-- multi-line text input control -->
-            <textarea name="comment" id="comment"
-                placeholder="Introduce tu comentario aquí">
-            </textarea>
-        </div>
-  
-        <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
-            Envíar
-        </button>
-    </form>
+    <div class="form-control">
+        <label for="alcohol-consumption">
+            ¿Cuántas veces consumes alcohol al mes?
+        </label>
+        <input type="number" id="alcohol-consumption" name="alcohol-consumption" min="0" max="30" step="1" />
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Ha sido diagnosticado con una enfermedad cardiovascular? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="enfermedad-cardiovascular-si">
+            <input type="radio"
+                   id="enfermedad-cardiovascular-si"
+                   name="enfermedadCardiovascular">Sí</input>
+        </label>
+        <label for="enfermedad-cardiovascular-no">
+            <input type="radio"
+                   id="enfermedad-cardiovascular-no"
+                   name="enfermedadCardiovascular">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Tiene diabetes? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="diabetes-si">
+            <input type="radio"
+                   id="diabetes-si"
+                   name="diabetes">Sí</input>
+        </label>
+        <label for="diabetes-no">
+            <input type="radio"
+                   id="diabetes-no"
+                   name="diabetes">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Tiene hipertensión? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="hipertension-si">
+            <input type="radio"
+                   id="hipertension-si"
+                   name="hipertension">Sí</input>
+        </label>
+        <label for="hipertension-no">
+            <input type="radio"
+                   id="hipertension-no"
+                   name="hipertension">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Tiene obesidad? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="obesidad-si">
+            <input type="radio"
+                   id="obesidad-si"
+                   name="obesidad">Sí</input>
+        </label>
+        <label for="obesidad-no">
+            <input type="radio"
+                   id="obesidad-no"
+                   name="obesidad">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Ha experimentado síntomas como dolor en el pecho, falta de aliento o palpitaciones recientemente?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="sintomas-si">
+            <input type="radio"
+                   id="sintomas-si"
+                   name="sintomas">Sí</input>
+        </label>
+        <label for="sintomas-no">
+            <input type="radio"
+                   id="sintomas-no"
+                   name="sintomas">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Tiene artritis? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="artritis-si">
+            <input type="radio"
+                   id="artritis-si"
+                   name="artritis">Sí</input>
+        </label>
+        <label for="artritis-no">
+            <input type="radio"
+                   id="artritis-no"
+                   name="artritis">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿En su familia se ha presentado enfermedades del sistema circulatorio? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="enfermedades-familia-si">
+            <input type="radio"
+                   id="enfermedades-familia-si"
+                   name="enfermedadesFamilia">Sí</input>
+        </label>
+        <label for="enfermedades-familia-no">
+            <input type="radio"
+                   id="enfermedades-familia-no"
+                   name="enfermedadesFamilia">No</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Con qué frecuencia consume frutas? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="consumo-frutas-nunca">
+            <input type="radio"
+                   id="consumo-frutas-nunca"
+                   name="consumoFrutas">Nunca</input>
+        </label>
+        <label for="consumo-frutas-poco">
+            <input type="radio"
+                   id="consumo-frutas-poco"
+                   name="consumoFrutas">Poco</input>
+        </label>
+        <label for="consumo-frutas-mucho">
+            <input type="radio"
+                   id="consumo-frutas-mucho"
+                   name="consumoFrutas">Mucho</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Con qué frecuencia consume vegetales? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="consumo-vegetales-nunca">
+            <input type="radio"
+                   id="consumo-vegetales-nunca"
+                   name="consumoVegetales">Nunca</input>
+        </label>
+        <label for="consumo-vegetales-poco">
+            <input type="radio"
+                   id="consumo-vegetales-poco"
+                   name="consumoVegetales">Poco</input>
+        </label>
+        <label for="consumo-vegetales-mucho">
+            <input type="radio"
+                   id="consumo-vegetales-mucho"
+                   name="consumoVegetales">Mucho</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            ¿Con qué frecuencia consume fritos o comida rápida? 
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="consumo-fritos-nunca">
+            <input type="radio"
+                   id="consumo-fritos-nunca"
+                   name="consumoFritos">Nunca</input>
+        </label>
+        <label for="consumo-fritos-poco">
+            <input type="radio"
+                   id="consumo-fritos-poco"
+                   name="consumoFritos">Poco</input>
+        </label>
+        <label for="consumo-fritos-mucho">
+            <input type="radio"
+                   id="consumo-fritos-mucho"
+                   name="consumoFritos">Mucho</input>
+        </label>
+    </div>
+    <!-- Multi-line Text Input Control -->
+    <button type="submit" value="submit">
+        Enviar
+    </button>
+</form>
 </body>
 </html>
+
+
