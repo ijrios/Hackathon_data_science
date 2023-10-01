@@ -62,7 +62,7 @@ In this hackathon, we tackle real-world problems that require a solid understand
 
 # CardioVigilant AI
 
-![Alt text 1](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-1.png "Título 1")
+![Alt text 1](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-1.png "Título 1")
 ![Alt text 2](https://raw.githubusercontent.comijriosHackathon_data_science/templates/images/CardioVigilant_AI-2.png "Título 2")
 ![Alt text 3](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-3.png "Título 3")
 ![Alt text 4](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-4.png "Título 4")
