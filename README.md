@@ -69,3 +69,7 @@ In this hackathon, we tackle real-world problems that require a solid understand
 ![Alt text](templates/images/CardioVigilant_AI-5.png=true "Title")
 ![Alt text](templates/images/CardioVigilant_AI-6.png=true "Title")
 
+<p align="center">
+  <img src="templates/images/CardioVigilant_AI-1" width="350">
+  <img src="templates/images/CardioVigilant_AI-2" width="350">
+</p>
