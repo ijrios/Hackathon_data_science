@@ -62,14 +62,9 @@ In this hackathon, we tackle real-world problems that require a solid understand
 
 # CardioVigilant AI
 
-![Alt text](templates/images/CardioVigilant_AI-1.png=true "Title")
-![Alt text](templates/images/CardioVigilant_AI-2.png=true "Title")
-![Alt text](templates/images/CardioVigilant_AI-3.png=true "Title")
-![Alt text](templates/images/CardioVigilant_AI-4.png=true "Title")
-![Alt text](templates/images/CardioVigilant_AI-5.png=true "Title")
-![Alt text](templates/images/CardioVigilant_AI-6.png=true "Title")
-
-<p align="center">
-  <img src="templates/images/CardioVigilant_AI-1" width="350">
-  <img src="templates/images/CardioVigilant_AI-2" width="350">
-</p>
+![Alt text 1](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-1.png "Título 1")
+![Alt text 2](https://raw.githubusercontent.comijriosHackathon_data_science/templates/images/CardioVigilant_AI-2.png "Título 2")
+![Alt text 3](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-3.png "Título 3")
+![Alt text 4](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-4.png "Título 4")
+![Alt text 5](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-5.png "Título 5")
+![Alt text 6](https://raw.githubusercontent.com/ijriosHackathon_data_science/templates/images/CardioVigilant_AI-6.png "Título 6")
