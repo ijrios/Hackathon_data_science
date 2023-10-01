@@ -62,3 +62,10 @@ In this hackathon, we tackle real-world problems that require a solid understand
 
 # CardioVigilant AI
 
+![Alt text](templates/images/CardioVigilant_AI-1.png=true "Title")
+![Alt text](templates/images/CardioVigilant_AI-2.png=true "Title")
+![Alt text](templates/images/CardioVigilant_AI-3.png=true "Title")
+![Alt text](templates/images/CardioVigilant_AI-4.png=true "Title")
+![Alt text](templates/images/CardioVigilant_AI-5.png=true "Title")
+![Alt text](templates/images/CardioVigilant_AI-6.png=true "Title")
+
