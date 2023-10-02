@@ -70,7 +70,7 @@ def procesar_encuesta():
       response = {'mensaje': 'La respuesta no ha sido enviada.'}
       
     df = pd.read_csv('data/encuesta.csv',header=None)
-    columns_to_drop = [7,8,9,10,11,12]
+    columns_to_drop = [7,8,10,11,12]
     filtered_df = df.drop(columns=columns_to_drop)
     with open("code (models)/modelo_entrenado_final.pkl", "rb") as f:
       try:

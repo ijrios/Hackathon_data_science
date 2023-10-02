@@ -7,32 +7,7 @@ What really sets this hackathon apart is its technical and rigorous focus on col
 
 In this hackathon, we tackle real-world problems that require a solid understanding of advanced data analysis, machine learning, and visualization techniques. Participants have the opportunity to work with challenging data sets, explore predictive modeling strategies, and use cutting-edge tools to come up with innovative solutions. In addition, technical issues such as the fusion of data from various sources, algorithm optimization and data quality management are addressed, adding an additional level of complexity and technical depth to the event. In short, the Data Science Hackathon is an exceptional opportunity to elevate our technical skills, collaborate with passionate colleagues, and apply our knowledge in a real and challenging context.
 
-## Challenges
-
-### Challenge 1: Data Fusion as a Tool for Economic Development Decision-Making
-
-**Context:** Medellin is positioning itself as a tourist destination for short-term stays with certain periodicities as well as for digital nomads with longer stays. These phenomena represent a great opportunity for economic development, but also pose challenges in terms of security, housing, and the cost of living.
-
-**Objective:** The objective of this challenge is to instrumentalize various Open Data sources to create tools that support decision-making by entities (public and/or private) through a Data Fusion approach, to address questions related to Economic Development.
-
-**Data Sources (including but not limited to):**
-- Monthly hotel occupancy percentage by zone
-- Monthly passenger departures from the airport with international destinations
-- Number of users per Wi-Fi zones per site per day
-- Monthly income from museum visitors
-
-### Challenge 2: Analysis and Characterization of Public Transportation Dynamics
-
-**Context:** Economic dynamics such as increased gasoline prices and full-day "pico y placa" (license plate restriction) present challenges in terms of mobility to maximize service quality. However, limited resources and inadequate planning have generated congestion and delays, affecting user satisfaction.
-
-**Objective:** The objective of this challenge is to develop an analysis, estimation, or prediction model based on mobility data to determine strategies and dynamics in public transportation on different routes and schedules. The solution may address, but is not limited to, issues such as predicting road incidents or accidents, promoting bicycle usage, congestion reduction strategies, and passenger mobilization analysis.
-
-**Data Sources (including but not limited to):**
-- Monthly mobilized passengers on the Medellin Metro
-- Monthly mobilized passengers in Medellin
-- Road incidents
-
-### Challenge 3: Disease Analysis from Health Data
+## Challenges chosen: Challenges 3 - Disease Analysis from Health Data
 
 **Context:** Health is a fundamental aspect of people's lives. Given the amount of information generated from patients, data science can play a crucial role in early identification, prevention, monitoring, and prediction of medically relevant diseases (diabetes, cancer, etc.).
 
@@ -45,22 +20,8 @@ In this hackathon, we tackle real-world problems that require a solid understand
 - Lung cancer detection
 - Breast cancer prognosis
 
-### Challenge 4: Data Tools for Supporting the Education System
 
-**Context:** Monitoring and supporting educational institutions are crucial for the successful development of programs. This represents multiple challenges in terms of dropout rates, improving quality, among others. However, this also depends on social, family, and psychological factors of students and the academic community in general.
-
-**Objective:** The goal of this challenge is to use data analysis techniques to predict and estimate student risk factors based on historical data such as grades, academic performance, geographic information, etc. This can help identify students who may be at risk of facing academic difficulties and enable early intervention.
-
-**Data Sources (including but not limited to):**
-- Mental health indices in students
-- Student performance in exams
-- Bullying in schools
-- Success/failure indices in students
-
-
-# Challenges chosen: Challenges 3 - Disease Analysis from Health Data
-
-# CardioVigilant AI
+# CardioVigilant AI: Your Heart Health Monitor
 
 ![Alt text 1](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-1.png "Título 1")
 ![Alt text 2](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-2.png "Título 2")
@@ -68,3 +29,11 @@ In this hackathon, we tackle real-world problems that require a solid understand
 ![Alt text 4](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-4.png "Título 4")
 ![Alt text 5](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-5.png "Título 5")
 ![Alt text 6](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-6.png "Título 6")
+
+This code is a crucial part of an ambitious data science project, primarily focused on the in-depth analysis of extensive datasets related to cardiovascular diseases. The project encompasses multiple objectives, including robust data preprocessing, the strategic development and deployment of machine learning models, and the meticulous evaluation of their performance metrics.
+
+One of the central components of this project is the implementation of a screening model. This model functions as a web-based questionnaire designed to systematically identify potential risk factors associated with cardiovascular diseases. If an individual is identified as having an elevated risk of cardiovascular disease, the model seamlessly facilitates the scheduling of a medical appointment to conduct further assessments and diagnosis.
+
+Furthermore, the screening model grapples with challenges such as dealing with an imbalanced database and rudimentary data that can predict risk but not provide a comprehensive diagnosis and prediction of cardiovascular diseases. To address this, two additional models have been implemented: a diagnostic model and a classification model for cardiac arrhythmias. These models allow medical professionals to input patient information, and based on the training data, make informed decisions regarding the presence of a cardiovascular disease.
+
+This holistic approach not only streamlines traditional, resource-intensive processes but also enhances the overall patient care system, optimizes resource allocation, and ultimately leads to an improved patient experience.
