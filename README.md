@@ -1,4 +1,4 @@
-# CardioVigilant AI: Your Heart Health Monitor (Challenges 3)
+# CardioVigilant_AI: Your Cardiovascular Health Guardian (Challenges 3)
 ### Expotecno - Hackathon data science  2023
 
 The Data Science Hackathon is an exciting event designed to satisfy the intense desire of those who, like me, find fascination in exploring innovative ideas and creating technical solutions based on data analysis. This stimulating competition takes place in the context of the prestigious International Energy and Expotech Symposium, bringing together a diverse group of data professionals, engineers, analysts and ardent technology enthusiasts, from all corners of the world.
@@ -21,7 +21,7 @@ In this hackathon, we tackle real-world problems that require a solid understand
 - Breast cancer prognosis
 
 
-# CardioVigilant AI: Your Heart Health Monitor
+# CardioVigilant AI: Your Cardiovascular Health Guardian
 
 ![Alt text 1](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-1.png "Título 1")
 ![Alt text 2](https://github.com/ijrios/Hackathon_data_science/blob/main/templates/images/CardioVigilant_AI-2.png "Título 2")
